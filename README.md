@@ -2,12 +2,13 @@
 *   instalar na pasta de linguagens do sublime
 
 # Criar um token
-/*
+
 Precisa colocar initial supply 100, decimals 0 e simbolo % para quotas da empresa.
-*/
+{
 pragma solidity ^0.4.8;
 contract tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData); }
 
+/* BioToken é o nome que eu dei, vc pode colocar qquer um */
 contract BioToken {
     /* Public variables of the token */
     string public standard = 'Token 0.1';
@@ -99,7 +100,7 @@ contract BioToken {
 }
 
 # Criar um crowdsale
-
+{
 pragma solidity ^0.4.2;
 contract token { function transfer(address receiver, uint amount){  } }
 
@@ -174,6 +175,7 @@ contract Crowdsale {
             }
         }
     }
+}
 }
 
 # Wallet Conta pessoal:  0xFB42B3e8E5C846D2e34402416AC5Be9202DC55B3

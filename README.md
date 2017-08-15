@@ -1,12 +1,18 @@
 # Ethereum Package for Sublime Text
 *   instalar na pasta de linguagens do sublime
 
+# Wallet Conta pessoal Rinkyby testnet ``` 0xFB42B3e8E5C846D2e34402416AC5Be9202DC55B3```
+
+# Pegar ethereum falsos: [faceuta](https://faucet.rinkeby.io/)
+* Gist
+Você precisa criar um arquivo no Gist, [exemplo](https://gist.github.com/renanserrano/8a835ceeba542b0e86428c6280e506d5), colar sua carteira no texto e compartilhar o link através do *share* button nesse formato: https://gist.github.com/renanserrano/8a835ceeba542b0e86428c6280e506d5 e colar na página da faucet
+
 # Criar um token
 
 Após colar o código, p/ criar cotas de uma empres, insira as seguintes infos no menu:
-initial supply: 100
-decimals: 0
-simbolo %
+* initial supply: 100
+* decimals: 0
+* simbolo %
 ```
 pragma solidity ^0.4.8;
 contract tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData); }
@@ -103,6 +109,7 @@ contract BioToken {
 }
 ```
 # Criar um crowdsale
+*INFELIZMENTE O CÓDIGO ABAIXO NÃO SOFREU DEPLOY* Mesmo alterando o *burn* por outro como *require* inúmeros erros começam a saltar.
 
 ```
 
@@ -181,6 +188,4 @@ contract Crowdsale {
         }
     }
 }
-```
 
-# Wallet Conta pessoal: ``` 0xFB42B3e8E5C846D2e34402416AC5Be9202DC55B3```
